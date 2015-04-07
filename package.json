@@ -1,0 +1,28 @@
+{
+	"name": "react-snippets",
+	"version": "0.0.1",
+	"description": "React (JSX) snippets for Atom",
+	"main": "Gulpfile.js",
+	"scripts": {
+		"test": "gulp"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/webbushka/atom-react-es6-snippets.git"
+	},
+	"keywords": [
+		"react",
+		"snippets",
+		"es6"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/webbushka/atom-react-es6-snippets/issues"
+	},
+	"homepage": "https://github.com/webbushka/atom-react-es6-snippets",
+	"devDependencies": {
+		"gulp": "^3.8.11",
+		"gulp-debug": "^2.0.1",
+		"gulp-lintspaces": "^0.2.3"
+	}
+}
