@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/webbushka/atom-react-es6-snippets.git"
+		"url": "https://github.com/webbushka/atom-react-snippets.git"
 	},
 	"keywords": [
 		"react",
@@ -22,9 +22,9 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/webbushka/atom-react-es6-snippets/issues"
+		"url": "https://github.com/webbushka/atom-react-snippets/issues"
 	},
-	"homepage": "https://github.com/webbushka/atom-react-es6-snippets",
+	"homepage": "https://github.com/webbushka/atom-react-snippets",
 	"devDependencies": {
 		"gulp": "^3.8.11",
 		"gulp-lintspaces": "^0.2.3"
