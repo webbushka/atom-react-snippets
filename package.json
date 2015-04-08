@@ -22,7 +22,6 @@
 	"homepage": "https://github.com/webbushka/atom-react-es6-snippets",
 	"devDependencies": {
 		"gulp": "^3.8.11",
-		"gulp-debug": "^2.0.1",
 		"gulp-lintspaces": "^0.2.3"
 	}
 }
