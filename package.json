@@ -17,6 +17,9 @@
 		"snippets",
 		"es6"
 	],
+	"engines": {
+		"atom": ">0.50.0"
+	},
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/webbushka/atom-react-es6-snippets/issues"
