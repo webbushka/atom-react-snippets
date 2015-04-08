@@ -1,32 +1,32 @@
 {
-	"name": "react-snippets",
-	"version": "0.0.0",
-	"description": "Atom Snippets for React, React Router and Flux",
-	"main": "./lib/react-snippets",
-	"scripts": {
-		"test": "gulp"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/webbushka/atom-react-snippets.git"
-	},
-	"keywords": [
-		"react",
-		"react router",
-		"flux",
-		"snippets",
-		"es6"
-	],
-	"engines": {
-		"atom": ">0.50.0"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/webbushka/atom-react-snippets/issues"
-	},
-	"homepage": "https://github.com/webbushka/atom-react-snippets",
-	"devDependencies": {
-		"gulp": "^3.8.11",
-		"gulp-lintspaces": "^0.2.3"
-	}
+  "name": "react-snippets",
+  "version": "0.1.0",
+  "description": "Atom Snippets for React, React Router and Flux",
+  "main": "./lib/react-snippets",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webbushka/atom-react-snippets.git"
+  },
+  "keywords": [
+    "react",
+    "react router",
+    "flux",
+    "snippets",
+    "es6"
+  ],
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webbushka/atom-react-snippets/issues"
+  },
+  "homepage": "https://github.com/webbushka/atom-react-snippets",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-lintspaces": "^0.2.3"
+  }
 }
