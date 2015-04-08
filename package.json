@@ -1,8 +1,8 @@
 {
 	"name": "react-snippets",
 	"version": "0.0.1",
-	"description": "React (JSX) snippets for Atom",
-	"main": "Gulpfile.js",
+	"description": "Atom Snippets for React, React Router and Flux",
+	"main": "./lib/react-snippets",
 	"scripts": {
 		"test": "gulp"
 	},
@@ -12,6 +12,8 @@
 	},
 	"keywords": [
 		"react",
+		"react router",
+		"flux",
 		"snippets",
 		"es6"
 	],

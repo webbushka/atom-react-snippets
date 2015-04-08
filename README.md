@@ -1,7 +1,7 @@
 Atom React.js Snippets [![Build Status](https://travis-ci.org/webbushka/atom-react-snippets.svg?branch=master)](https://travis-ci.org/webbushka/atom-react-snippets)
 ====================================================================================================================================================================
 
-A React.js snippet library for [Atom](https://atom.io/). This library uses ES6 syntax, if you would prefer ES5 or Coffeescript snippets please use the [Atom React Package](https://atom.io/packages/react).
+An [Atom](https://atom.io/) snippet library for React, React Router and Flux. This library uses ES6 syntax, if you would prefer ES5 or Coffeescript snippets please use the [Atom React Package](https://atom.io/packages/react).
 
 Install
 -------
@@ -23,10 +23,6 @@ Features
 --------
 
 -	React Snippets
-
-TODO
-----
-
 -	React Router Snippets
 -	Flux Snippets
 

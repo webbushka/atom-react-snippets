@@ -1,0 +1,58 @@
+{
+".source.js":
+	"Router: router skeleton":
+		prefix: "_rr"
+		body: "'use strict';\nimport React from 'react';\nimport Router from 'react-router';\nlet { Route, DefaultRoute, NotFoundRoute } = Router;\n\n// -- Import components\nimport ${1:App} from '${2}';\n\nexport default (\n\t<Route handler={${1:App}} path='/'>\n\t\t${3}\n\t</Route>\n);"
+
+	"Router: Router.run( ... )":
+		prefix: "_run"
+		body: "Router.run(${1:routes},${2: Router.HistoryLocaion}, (Handler) => {\n\tReact.render(<Handler />, document.${3:getElementById('${4:app}')});\n});"
+
+	"Router: Router.create({ ... })":
+		prefix: "_rc"
+		body: "var router = Router.create({\n\troutes: ${1:routes},\n\tlocation: Router.HistoryLocatio\n});\nrouter.run((Handler) => {\n\tReact.render(<Handler />, document.${3:getElementById('${4:app}')});\n});"
+
+	"Router: <Route />":
+		prefix: "_rt"
+		body: "<Route name='${1}' handler={${2}} ${3:path='${4}'} />"
+
+	"Router: Nested <Route></Route>":
+		prefix: "_nrt"
+		body: "<Route name='${1}' handler={${2}} ${3:path='${4}'}>\n\t${5}\n</Route>"
+
+	"Router: <Redirect />":
+		prefix: "_rrt"
+		body: "<Redirect from='${1}' to=${2} />"
+
+	"Router: <NotFoundRoute />":
+		prefix: "_nfrt"
+		body: "<NotFoundRoute handler={${1}}/>"
+
+	"Router: <DefaultRoute />":
+		prefix: "_drt"
+		body: "<DefaultRoute handler={${1}} />"
+
+	"Router: <Link />":
+		prefix: "_ln"
+		body: "<Link to={${1}} params={${2}} ${3:query={${4}}}/>"
+
+	"Router: willTransitionTo(t, p) { ... }":
+		prefix: "_wtt"
+		body: "willTransitionTo(transition, params) {\n\t${1}\n},"
+
+	"Router: willTransitionFrom(t, c) { ... }":
+		prefix: "_wtf"
+		body: "willTransitionFrom(transition, component) {\n\t${1}\n},"
+
+	"Router: transition.abort()":
+		prefix: "_ta"
+		body: "transition.abort();"
+
+	"Router: transition.retry()":
+		prefix: "_tr"
+		body: "transition.retry();"
+
+	"Router: transition.redirect()":
+		prefix: "_trd"
+		body: "transition.redirect(${1:to}, ${2:params}, ${3:query});"
+}
