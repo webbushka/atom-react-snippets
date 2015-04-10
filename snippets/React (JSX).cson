@@ -50,7 +50,7 @@
 
   "React: component skeleton":
     prefix: "_rcc"
-    body: "import React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div />}\n\t\t);\n\t}\n\n});"
+    body: "'use strict';\nimport React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div />}\n\t\t);\n\t}\n\n});"
 
   "React: render() { return ... }":
     prefix: "_ren"
