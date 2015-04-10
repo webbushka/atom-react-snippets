@@ -34,7 +34,7 @@
 
   "Router: <Link />":
     prefix: "_ln"
-    body: "<Link to={${1}} params={${2}} ${3:query={${4}}}>${5}</Link>"
+    body: "<Link to='${1}' params={${2}} ${3:query={${4}}}>${5}</Link>"
 
   "Router: willTransitionTo(t, p) { ... }":
     prefix: "_wtt"
