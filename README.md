@@ -13,8 +13,8 @@ Development
 
 ```sh
 $ cd ~/.atom/packages
-$ git clone https://github.com/webbushka/react-snippets.git
-$ cd react-snippets
+$ git clone https://github.com/webbushka/atom-react-snippets.git
+$ cd atom-react-snippets
 $ apm install
 $ apm link
 ```
