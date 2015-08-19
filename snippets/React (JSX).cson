@@ -48,6 +48,10 @@
     prefix: "_pt"
     body: "propTypes: {\n\t${1}: React.PropTypes.${2:string}\n},"
 
+  "React: React.PropTypes.":
+      prefix: "_rpt"
+      body: "React.PropTypes."
+
   "React: component skeleton":
     prefix: "_rcc"
     body: "'use strict';\nimport React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div />}\n\t\t);\n\t}\n\n});"
