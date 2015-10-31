@@ -1,4 +1,3 @@
-{
 ".source.js":
   "Router: router skeleton":
     prefix: "_rr"
@@ -55,4 +54,3 @@
   "Router: transition.redirect()":
     prefix: "_trd"
     body: "transition.redirect(${1:to}, ${2:params}, ${3:query});"
-}

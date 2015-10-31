@@ -1,4 +1,3 @@
-{
 ".source.js":
   "Flux Action":
     prefix: "_fa"
@@ -11,4 +10,3 @@
   "Flux: Store":
     prefix: "_fs"
     body: "'use strict';\nimport ${1:AppDispatcher} from '../dispatcher/${1:AppDispatcher}';\nimport ${2:appConstants} from '../constants/${2:appConstants}';\nimport { EventEmitter } from 'event';\nimport assign from 'react/lib/Object.assign';\n\nlet _state = {};\n\nlet ${3:store} = assign({}, EventEmitter.prototype, {\n\t${4}\n});\n\nAppDispatcher.register((payload) => {\n\tlet { action } = payload;\n\n\t switch(action.actionType) {\n\n\t\tdefault:\n\t\t\treturn true;\n\t}\n});\n\nexport default ${3:store};"
-}

@@ -1,4 +1,3 @@
-{
 ".source.js":
   "React: componentDidMount() { ... }":
     prefix: "_cdm"
@@ -79,4 +78,3 @@
   "React: render(component, container, [callback])":
     prefix: "_rrc"
     body: "React.render(${1:<$2 />}, ${3:document.body}${4:, ${5:callback}});"
-}
