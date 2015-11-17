@@ -1,27 +1,27 @@
 ".source.js":
   "React: componentDidMount() { ... }":
     prefix: "_cdm"
-    body: "componentDidMount() {\n\t${1}\n},"
+    body: "componentDidMount() {\n\t${1}\n}${2}"
 
   "React: componentDidUpdate(pp, ps) { ... }":
     prefix: "_cdup"
-    body: "componentDidUpdate(prevProps, prevState) {\n\t${1}\n},"
+    body: "componentDidUpdate(prevProps, prevState) {\n\t${1}\n}${2}"
 
   "React: componentWillMount() { ... }":
     prefix: "_cwm"
-    body: "componentWillMount() {\n\t${1}\n},"
+    body: "componentWillMount() {\n\t${1}\n}${2}"
 
   "React: componentWillReceiveProps(np) { ... }":
     prefix: "_cwr"
-    body: "componentWillReceiveProps(nextProps) {\n\t${1}\n},"
+    body: "componentWillReceiveProps(nextProps) {\n\t${1}\n}${2}"
 
   "React: componentWillUnmount() { ... }":
     prefix: "_cwun"
-    body: "componentWillUnmount() {\n\t${1}\n},"
+    body: "componentWillUnmount() {\n\t${1}\n}${2}"
 
   "React: componentWillUpdate(np, ns) { ... }":
     prefix: "_cwu"
-    body: "componentWillUpdate(nextProps, nextState) {\n\t${1}\n},"
+    body: "componentWillUpdate(nextProps, nextState) {\n\t${1}\n}${2}"
 
   "React: cx({ ... })":
     prefix: "_cx"
@@ -43,6 +43,10 @@
     prefix: "_ism"
     body: "isMounted()"
 
+  "React: Class.propTypes = { ... }":
+    prefix: "_cpt"
+    body: "${1}.PropTypes = {\n\t${2}: React.PropTypes.${3:string}\n}},"
+
   "React: propTypes { ... }":
     prefix: "_pt"
     body: "propTypes: {\n\t${1}: React.PropTypes.${2:string}\n},"
@@ -51,7 +55,11 @@
       prefix: "_rpt"
       body: "React.PropTypes."
 
-  "React: component skeleton":
+  "React: class skeleton":
+    prefix: "_cer"
+    body: "'use strict';\nimport React from 'react';\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div />}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
+
+  "React: createClass skeleton":
     prefix: "_rcc"
     body: "'use strict';\nimport React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div />}\n\t\t);\n\t}\n\n});"
 
@@ -61,11 +69,11 @@
 
   "React: setState({ ... })":
     prefix: "_sst"
-    body: "setState({\n\t${1}: ${2}\n});"
+    body: "this.setState({\n\t${1}: ${2}\n});"
 
   "React: shouldComponentUpdate(np, ns) { ... }":
     prefix: "_scu"
-    body: "shouldComponentUpdate(nextProps, nextState) {\n\t${1}\n},"
+    body: "shouldComponentUpdate(nextProps, nextState) {\n\t${1}\n}${2}"
 
   "React: this.props.":
     prefix: "_props"
@@ -81,19 +89,8 @@
 
   "React: constructor(props)":
     prefix: "_cns"
-    body: """
-      constructor(props) {
-        super(props)
-        ${1:this.state = ${2}}
-      }
-    """
+    body: "constructor(props) {\n\tsuper(props);\n\t${1:this.state = ${2};}\n}"
 
   "React: class Foo extends Bar":
     prefix: "_clss"
-    body: """
-      class ${1:Foo} extends ${2:React.Component} {
-        render() {
-          ${3}
-        }
-      }
-    """
+    body: "class ${1:Foo} extends ${2:React.Component} {\n\trender() {\n\t\t${3}\n\t}\n}"

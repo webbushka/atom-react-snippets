@@ -4,7 +4,7 @@
     body: "'use strict';\nimport ${1:AppDispatcher} from '../dispatcher/${1:AppDispatcher}';\nimport ${2:constants} from '../constants/${2:constants}';\nimport ${3:utils} from '../utils/${3:utils};'\n\nexport default {\n\t${4}\n};"
 
   "Flux: AppDispatcher":
-    prefix: "_fd"
+    prefix: "_fad"
     body: "'use strict';\nimport { Dispatcher } from 'flux';\n\nlet AppDispatcher = new Dispatcher();\n\nAppDispatcher.handleAction = function(action) {\n\tthis.dispatch({\n\t\tsource: 'VIEW_ACTION',\n\t\taction: action\n\t});};\n\nexport default AppDispatcher;"
 
   "Flux: Store":
