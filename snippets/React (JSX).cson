@@ -1,4 +1,3 @@
-{
 ".source.js":
   "React: componentDidMount() { ... }":
     prefix: "_cdm"
@@ -79,4 +78,22 @@
   "React: render(component, container, [callback])":
     prefix: "_rrc"
     body: "React.render(${1:<$2 />}, ${3:document.body}${4:, ${5:callback}});"
-}
+
+  "React: constructor(props)":
+    prefix: "_cns"
+    body: """
+      constructor(props) {
+        super(props)
+        ${1:this.state = ${2}}
+      }
+    """
+
+  "React: class Foo extends Bar":
+    prefix: "_clss"
+    body: """
+      class ${1:Foo} extends ${2:React.Component} {
+        render() {
+          ${3}
+        }
+      }
+    """
