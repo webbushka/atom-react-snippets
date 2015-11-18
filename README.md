@@ -8,6 +8,13 @@ Install
 
 Go to `Packages > Settings View > Open` once in settings go to the Install tab and search for **react-snippets**
 
+Documentation
+--------
+
+-	[React Snippets](https://github.com/webbushka/atom-react-snippets/wiki/React-Snippets)
+-	[React Router Snippets](https://github.com/webbushka/atom-react-snippets/wiki/Router-Snippets)
+-	[Flux Snippets](https://github.com/webbushka/atom-react-snippets/wiki/Flux-Snippets)
+
 Development
 -----------
 
