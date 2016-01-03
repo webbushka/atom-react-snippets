@@ -94,3 +94,7 @@
   "React: class Foo extends Bar":
     prefix: "_clss"
     body: "class ${1:Foo} extends ${2:React.Component} {\n\trender() {\n\t\t${3}\n\t}\n}"
+
+  "React: dangerouslySetInnerHTML":
+    prefix: "_dnghtml"
+    body: "dangerouslySetInnerHTML={{__html: ${1}}}"
