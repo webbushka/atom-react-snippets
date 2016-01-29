@@ -8,6 +8,8 @@ Install
 
 Go to `Packages > Settings View > Open` once in settings go to the Install tab and search for **react-snippets**
 
+Restart Atom
+
 Documentation
 --------
 
