@@ -5,11 +5,11 @@
 
   "Router: Router.run( ... )":
     prefix: "_run"
-    body: "Router.run(${1:routes},${2: Router.HistoryLocaion}, (Handler) => {\n\tReact.render(<Handler />, document.${3:getElementById('${4:app}')});\n});"
+    body: "Router.run(${1:routes},${2: Router.HistoryLocation}, (Handler) => {\n\tReact.render(<Handler />, document.${3:getElementById('${4:app}')});\n});"
 
   "Router: Router.create({ ... })":
     prefix: "_rc"
-    body: "var router = Router.create({\n\troutes: ${1:routes},\n\tlocation: Router.HistoryLocatio\n});\nrouter.run((Handler) => {\n\tReact.render(<Handler />, document.${3:getElementById('${4:app}')});\n});"
+    body: "var router = Router.create({\n\troutes: ${1:routes},\n\tlocation: Router.HistoryLocation\n});\nrouter.run((Handler) => {\n\tReact.render(<Handler />, document.${3:getElementById('${4:app}')});\n});"
 
   "Router: <Route />":
     prefix: "_rt"
