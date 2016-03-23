@@ -32,7 +32,7 @@ Features
 --------
 
 -	React Snippets
--	React Router Snippets - Needs update from v0.13 to v1.0
+-	React Router Snippets - Needs update from v0.13 to v2.1
 -	Flux Snippets
 
 Contributing
