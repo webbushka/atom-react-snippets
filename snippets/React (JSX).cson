@@ -63,9 +63,17 @@
     prefix: "_rcc"
     body: "'use strict';\nimport React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div />}\n\t\t);\n\t}\n\n});"
 
+  "React: Stateless Component":
+    prefix: "_rsc"
+    body: "'use strict';\nimport React from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n};\n\nexport default ${1};"
+
   "React: Stateless Function":
     prefix: "_rsf"
-    body: "'use strict';\nimport React from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.displayName = '${1}';\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n};\n\nexport default ${1};"
+    body: "const ${1} = ({${2}}) => (\n\t<div>{${2}}</div>\n);"
+
+  "React: Component displayName":
+    prefix: "_cdn"
+    body: "${1}.displayName = '${1}';"
 
   "React: render() { return ... }":
     prefix: "_ren"
