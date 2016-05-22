@@ -57,15 +57,15 @@
 
   "React: class skeleton":
     prefix: "_cer"
-    body: "'use strict';\nimport React from 'react';\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div />}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
+    body: "import React from 'react';\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div />}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
 
   "React: createClass skeleton":
     prefix: "_rcc"
-    body: "'use strict';\nimport React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div />}\n\t\t);\n\t}\n\n});"
+    body: "import React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div />}\n\t\t);\n\t}\n\n});"
 
   "React: Stateless Component":
     prefix: "_rsc"
-    body: "'use strict';\nimport React from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n};\n\nexport default ${1};"
+    body: "import React from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n};\n\nexport default ${1};"
 
   "React: Stateless Function":
     prefix: "_rsf"
