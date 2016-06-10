@@ -47,7 +47,7 @@ Contributing
 Change Log
 ----------
 
-[It's over here!](https://github.com/webbushka/atom-react-snippets/wiki/Changelogs)
+[It's over here!](https://github.com/webbushka/atom-react-snippets/wiki/Changelog)
 
 License
 -------
