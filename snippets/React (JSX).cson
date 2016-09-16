@@ -1,4 +1,12 @@
 ".source.js":
+  "React: import()":
+    prefix: "_ir"
+    body: "import React from 'react'"
+
+  "React: import react-dom()":
+    prefix: "_ird"
+    body: "import ReactDOM from 'react-dom'"
+
   "React: componentDidMount() { ... }":
     prefix: "_cdm"
     body: "componentDidMount() {\n\t${1}\n}${2}"
