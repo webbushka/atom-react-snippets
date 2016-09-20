@@ -2,7 +2,6 @@
   'Router: router skeleton':
     'prefix': '_rr'
     'body': """
-      'use strict';
       import React from 'react';
       import ReactDOM from 'react-dom';
       import Router from 'react-router';
