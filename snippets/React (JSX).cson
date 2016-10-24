@@ -1,4 +1,8 @@
 ".source.js":
+  "React: import empty()":
+    prefix: "_i"
+    body: "import ${1} from '${2}'"
+
   "React: import()":
     prefix: "_ir"
     body: "import React from 'react'"
