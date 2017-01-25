@@ -1,7 +1,7 @@
 ".source.js":
   "Flux Action":
     prefix: "_fa"
-    body: "import ${1:AppDispatcher} from '../dispatcher/${1:AppDispatcher}';\nimport ${2:constants} from '../constants/${2:constants}';\nimport ${3:utils} from '../utils/${3:utils};'\n\nexport default {\n\t${4}\n};"
+    body: "import ${1:AppDispatcher} from '../dispatcher/${1:AppDispatcher}';\nimport ${2:constants} from '../constants/${2:constants}';\nimport ${3:utils} from '../utils/${3:utils}';\n\nexport default {\n\t${4}\n};"
 
   "Flux: AppDispatcher":
     prefix: "_fad"
