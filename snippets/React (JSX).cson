@@ -65,11 +65,11 @@
 
   "React: class skeleton":
     prefix: "_cer"
-    body: "import React from 'react';\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div />}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
+    body: "import React from 'react';\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
 
   "React: createClass skeleton":
     prefix: "_rcc"
-    body: "import React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div />}\n\t\t);\n\t}\n\n});"
+    body: "import React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div></div>}\n\t\t);\n\t}\n\n});"
 
   "React: Stateless Component":
     prefix: "_rsc"
@@ -85,7 +85,7 @@
 
   "React: render() { return ... }":
     prefix: "_ren"
-    body: "render() {\n\treturn (\n\t\t${1:<div />}\n\t);\n}"
+    body: "render() {\n\treturn (\n\t\t${1:<div></div>}\n\t);\n}"
 
   "React: setState({ ... })":
     prefix: "_sst"
