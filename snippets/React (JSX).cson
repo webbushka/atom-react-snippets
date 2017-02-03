@@ -61,7 +61,7 @@
 
   "React: Class.defaultProps = { ... }":
     prefix: "_cdp"
-    body: "${1}.defaultProps = {\n\t${2}: ${3:string}\n};"
+    body: "${1}.defaultProps = {\n\t${2}: ${3}\n};"
 
   "React: propTypes { ... }":
     prefix: "_pt"
