@@ -59,6 +59,10 @@
     prefix: "_cpt"
     body: "${1}.propTypes = {\n\t${2}: React.PropTypes.${3:string}\n};"
 
+  "React: Class.defaultProps = { ... }":
+    prefix: "_cdp"
+    body: "${1}.defaultProps = {\n\t${2}: ${3:string}\n};"
+
   "React: propTypes { ... }":
     prefix: "_pt"
     body: "propTypes: {\n\t${1}: React.PropTypes.${2:string}\n},"
