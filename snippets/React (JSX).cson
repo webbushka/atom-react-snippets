@@ -73,15 +73,15 @@
 
   "React: static contextTypes = { ... }":
     prefix: "_scct"
-    body: "static contextTypes = {\n\t${1}: PropTypes.${2:string}\n};"
+    body: "static contextTypes = {\n\t${1}: PropTypes.${2:string}\n}"
 
   "React: static propTypes = { ... }":
     prefix: "_scpt"
-    body: "static propTypes = {\n\t${1}: PropTypes.${2:string}\n};"
+    body: "static propTypes = {\n\t${1}: PropTypes.${2:string}\n}"
 
   "React: static defaultProps = { ... }":
     prefix: "_scdp"
-    body: "static defaultProps = {\n\t${1}: ${2}\n};"
+    body: "static defaultProps = {\n\t${1}: ${2}\n}"
 
   "React: propTypes { ... }":
     prefix: "_pt"
