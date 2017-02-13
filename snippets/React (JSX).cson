@@ -7,6 +7,10 @@
     prefix: "_ir"
     body: "import React from 'react';"
 
+  "React: import() with PropTypes":
+    prefix: "_irp"
+    body: "import React, { PropTypes } from 'react';"
+
   "React: import react-dom()":
     prefix: "_ird"
     body: "import ReactDOM from 'react-dom';"
@@ -55,6 +59,10 @@
     prefix: "_ism"
     body: "isMounted()"
 
+  "React: Class.contextTypes = { ... }":
+    prefix: "_cct"
+    body: "${1}.contextTypes = {\n\t${2}: React.PropTypes.${3:string}\n};"
+
   "React: Class.propTypes = { ... }":
     prefix: "_cpt"
     body: "${1}.propTypes = {\n\t${2}: React.PropTypes.${3:string}\n};"
@@ -62,6 +70,18 @@
   "React: Class.defaultProps = { ... }":
     prefix: "_cdp"
     body: "${1}.defaultProps = {\n\t${2}: ${3}\n};"
+
+  "React: static contextTypes = { ... }":
+    prefix: "_scct"
+    body: "static contextTypes = {\n\t${1}: PropTypes.${2:string}\n}"
+
+  "React: static propTypes = { ... }":
+    prefix: "_scpt"
+    body: "static propTypes = {\n\t${1}: PropTypes.${2:string}\n}"
+
+  "React: static defaultProps = { ... }":
+    prefix: "_scdp"
+    body: "static defaultProps = {\n\t${1}: ${2}\n}"
 
   "React: propTypes { ... }":
     prefix: "_pt"
