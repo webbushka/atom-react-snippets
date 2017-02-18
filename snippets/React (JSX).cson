@@ -103,6 +103,10 @@
     prefix: "_rsc"
     body: "import React from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n};\n\nexport default ${1};"
 
+  "React: Stateless Component PropTypes":
+    prefix: "_rscp"
+    body: "import React, {PropTypes} from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n};\n\nexport default ${1};"
+
   "React: Stateless Function":
     prefix: "_rsf"
     body: "const ${1} = ({${2}}) => (\n\t<div>{${2}}</div>\n);"
