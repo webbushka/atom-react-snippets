@@ -1,19 +1,19 @@
 ".source.js":
   "React: import empty()":
     prefix: "_i"
-    body: "import ${1} from '${2}';"
+    body: "import ${1} from '${2}'"
 
   "React: import()":
     prefix: "_ir"
-    body: "import React from 'react';"
+    body: "import React from 'react'"
 
   "React: import() with PropTypes":
     prefix: "_irp"
-    body: "import React, { PropTypes } from 'react';"
+    body: "import React, { PropTypes } from 'react'"
 
   "React: import react-dom()":
     prefix: "_ird"
-    body: "import ReactDOM from 'react-dom';"
+    body: "import ReactDOM from 'react-dom'"
 
   "React: componentDidMount() { ... }":
     prefix: "_cdm"
@@ -41,19 +41,19 @@
 
   "React: cx({ ... })":
     prefix: "_cx"
-    body: "cx({\n\t$1: $2\n});"
+    body: "cx({\n\t$1: $2\n})"
 
   "React: forceUpdate(...)":
     prefix: "_fup"
-    body: "forceUpdate(${1:callback});"
+    body: "forceUpdate(${1:callback})"
 
   "React: getDefaultProps() { return {...} } ":
     prefix: "_gdp"
-    body: "getDefaultProps() {\n\treturn {\n\t\t${1}\n\t};\n},"
+    body: "getDefaultProps() {\n\treturn {\n\t\t${1}\n\t}\n},"
 
   "React: getInitialState() { return {...} } ":
     prefix: "_gis"
-    body: "getInitialState() {\n\treturn {\n\t\t${1}: ${2}\n\t};\n},"
+    body: "getInitialState() {\n\treturn {\n\t\t${1}: ${2}\n\t}\n},"
 
   "React: isMounted()":
     prefix: "_ism"
@@ -61,15 +61,15 @@
 
   "React: Class.contextTypes = { ... }":
     prefix: "_cct"
-    body: "${1}.contextTypes = {\n\t${2}: React.PropTypes.${3:string}\n};"
+    body: "${1}.contextTypes = {\n\t${2}: React.PropTypes.${3:string}\n}"
 
   "React: Class.propTypes = { ... }":
     prefix: "_cpt"
-    body: "${1}.propTypes = {\n\t${2}: React.PropTypes.${3:string}\n};"
+    body: "${1}.propTypes = {\n\t${2}: React.PropTypes.${3:string}\n}"
 
   "React: Class.defaultProps = { ... }":
     prefix: "_cdp"
-    body: "${1}.defaultProps = {\n\t${2}: ${3}\n};"
+    body: "${1}.defaultProps = {\n\t${2}: ${3}\n}"
 
   "React: static contextTypes = { ... }":
     prefix: "_scct"
@@ -93,43 +93,43 @@
 
   "React: class skeleton":
     prefix: "_cer"
-    body: "import React from 'react';\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
+    body: "import React from 'react'\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t)\n\t}\n\n}\n\nexport default ${1}"
 
   "React: createClass skeleton":
     prefix: "_rcc"
-    body: "import React from 'react';\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div></div>}\n\t\t);\n\t}\n\n});"
+    body: "import React from 'react'\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div></div>}\n\t\t)\n\t}\n\n})"
 
   "React: Stateless Component":
     prefix: "_rsc"
-    body: "import React from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n};\n\nexport default ${1};"
+    body: "import React from 'react'\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n}\n\nexport default ${1}"
 
   "React: Stateless Component Return":
     prefix: "_rscr"
-    body: "import React from 'react';\n\nconst ${1} = ({${2}}) => {\n\treturn (\n\t\t<div>${4}</div>\n\t);\n}\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n};\n\nexport default ${1};"
+    body: "import React from 'react'\n\nconst ${1} = ({${2}}) => {\n\treturn (\n\t\t<div>${4}</div>\n\t)\n}\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n}\n\nexport default ${1}"
 
   "React: Stateless Component Click":
     prefix: "_rscc"
-    body: "import React from 'react';\n\nconst ${1} = ({${2}}) => {\n\tconst handleClick = () => {};\n\treturn (\n\t\t<div onClick={handleClick}>${4}</div>\n\t);\n}\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n};\n\nexport default ${1};"
+    body: "import React from 'react'\n\nconst ${1} = ({${2}}) => {\n\tconst handleClick = () => {}\n\treturn (\n\t\t<div onClick={handleClick}>${4}</div>\n\t)\n}\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n}\n\nexport default ${1}"
 
   "React: Stateless Component PropTypes":
     prefix: "_rscp"
-    body: "import React, {PropTypes} from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n};\n\nexport default ${1};"
+    body: "import React, {PropTypes} from 'react'\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
 
   "React: Stateless Function":
     prefix: "_rsf"
-    body: "const ${1} = ({${2}}) => (\n\t<div>{${2}}</div>\n);"
+    body: "const ${1} = ({${2}}) => (\n\t<div>{${2}}</div>\n)"
 
   "React: Component displayName":
     prefix: "_cdn"
-    body: "${1}.displayName = '${1}';"
+    body: "${1}.displayName = '${1}'"
 
   "React: render() { return ... }":
     prefix: "_ren"
-    body: "render() {\n\treturn (\n\t\t${1:<div></div>}\n\t);\n}"
+    body: "render() {\n\treturn (\n\t\t${1:<div></div>}\n\t)\n}"
 
   "React: setState({ ... })":
     prefix: "_sst"
-    body: "this.setState({\n\t${1}: ${2}\n});"
+    body: "this.setState({\n\t${1}: ${2}\n})"
 
   "React: shouldComponentUpdate(np, ns) { ... }":
     prefix: "_scu"
@@ -145,11 +145,11 @@
 
   "React: render(component, container, [callback])":
     prefix: "_rrc"
-    body: "React.render(${1:<$2 />}, ${3:document.body}${4:, ${5:callback}});"
+    body: "React.render(${1:<$2 />}, ${3:document.body}${4:, ${5:callback}})"
 
   "React: constructor(props)":
     prefix: "_cns"
-    body: "constructor(props) {\n\tsuper(props);\n\t${1:this.state = ${2};}\n}"
+    body: "constructor(props) {\n\tsuper(props)\n\t${1:this.state = ${2}}\n}"
 
   "React: class Foo extends Bar":
     prefix: "_clss"
