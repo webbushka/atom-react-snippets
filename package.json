@@ -2,7 +2,7 @@
   "name": "standard-react-snippets",
   "version": "0.0.0",
   "description": "A collection of React snippets for Atom, StandardJS Style",
-  "main": "./lib/standard-react-snippets",
+  "main": "./lib/react-snippets",
   "scripts": {
     "test": "gulp"
   },
