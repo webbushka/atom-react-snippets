@@ -1,6 +1,6 @@
 {
   "name": "standard-react-snippets",
-  "version": "0.1.0",
+  "version": "0.7.2",
   "description": "A collection of React snippets for Atom, StandardJS Style",
   "main": "./lib/react-snippets",
   "scripts": {
