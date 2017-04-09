@@ -1,7 +1,8 @@
-# Standard React Snippets [![Build Status](https://travis-ci.org/rongierlach/standard-react-snippets.svg?branch=master)](https://travis-ci.org/rongierlach/standard-react-snippets)
-An [Atom](https://atom.io/) snippet library for React that conforms to the [StandardJS](https://standardjs.com) code style  
+# Standard React Snippets
+An [Atom](https://atom.io/) snippet library for React that conforms to the [StandardJS](https://standardjs.com) code style
 
-[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+ [![Build Status](https://travis-ci.org/rongierlach/standard-react-snippets.svg?branch=master)](https://travis-ci.org/rongierlach/standard-react-snippets) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 
 ## Installation
 Go to `Packages > Settings View > Open`  
