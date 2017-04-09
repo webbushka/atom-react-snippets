@@ -1,5 +1,5 @@
 # Standard React Snippets [![Build Status](https://travis-ci.org/rongierlach/standard-react-snippets.svg?branch=master)](https://travis-ci.org/rongierlach/standard-react-snippets)
-An [Atom](https://atom.io/) snippet library for React that conforms to the [StandardJS](https://standardjs.com) code style.  
+An [Atom](https://atom.io/) snippet library for React that conforms to the [StandardJS](https://standardjs.com) code style  
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
@@ -28,5 +28,5 @@ $ apm link
 5.	Submit a pull request
 
 ## Credits
-This package is a fork of [Atom React.js Snippets](https://github.com/webbushka/atom-react-snippets).  
-The React.js snippets were originally created by [orktes](https://atom.io/users/orktes) in [Atom React](https://atom.io/packages/react) in ES5 syntax.
+This package is a fork of [Atom React.js Snippets](https://github.com/webbushka/atom-react-snippets)  
+The React.js snippets were originally created by [orktes](https://atom.io/users/orktes) in [Atom React](https://atom.io/packages/react) in ES5 syntax
