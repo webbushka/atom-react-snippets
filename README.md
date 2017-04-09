@@ -4,8 +4,8 @@ An [Atom](https://atom.io/) snippet library for React that conforms to the [Stan
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ## Installation
-Go to `Packages > Settings View > Open` once in settings go to the Install tab and search for **standard-react-snippets**
-
+Go to `Packages > Settings View > Open`  
+Once in settings go to the Install tab and search for **standard-react-snippets**  
 Restart Atom
 
 ## Documentation
