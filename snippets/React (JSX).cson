@@ -7,9 +7,21 @@
     prefix: "_ir"
     body: "import React from 'react'"
 
+  "React: import() PropTypes":
+      prefix: "_ipt"
+      body: "import PropTypes from 'prop-types'"
+
+  "React: import() createReactClass":
+      prefix: "_icc"
+      body: "import createReactClass from 'create-react-class'"
+
   "React: import() with PropTypes":
     prefix: "_irp"
-    body: "import React, { PropTypes } from 'react'"
+    body: "import React from 'react'\nimport PropTypes from 'prop-types'"
+
+  "React: import() with createReactClass":
+    prefix: "_ircc"
+    body: "import React from 'react'\nimport createReactClass from 'create-react-class'"
 
   "React: import react-dom()":
     prefix: "_ird"
@@ -61,11 +73,11 @@
 
   "React: Class.contextTypes = { ... }":
     prefix: "_cct"
-    body: "${1}.contextTypes = {\n\t${2}: React.PropTypes.${3:string}\n}"
+    body: "${1}.contextTypes = {\n\t${2}: PropTypes.${3:string}\n}"
 
   "React: Class.propTypes = { ... }":
     prefix: "_cpt"
-    body: "${1}.propTypes = {\n\t${2}: React.PropTypes.${3:string}\n}"
+    body: "${1}.propTypes = {\n\t${2}: PropTypes.${3:string}\n}"
 
   "React: Class.defaultProps = { ... }":
     prefix: "_cdp"
@@ -85,35 +97,31 @@
 
   "React: propTypes { ... }":
     prefix: "_pt"
-    body: "propTypes: {\n\t${1}: React.PropTypes.${2:string}\n},"
-
-  "React: React.PropTypes.":
-      prefix: "_rpt"
-      body: "React.PropTypes."
+    body: "propTypes: {\n\t${1}: PropTypes.${2:string}\n},"
 
   "React: class skeleton":
     prefix: "_cer"
     body: "import React from 'react'\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t)\n\t}\n\n}\n\nexport default ${1}"
 
-  "React: createClass skeleton":
+  "React: createReactClass skeleton":
     prefix: "_rcc"
-    body: "import React from 'react'\n\nexport default React.createClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div></div>}\n\t\t)\n\t}\n\n})"
+    body: "import React from 'react'\nimport createReactClass from 'create-react-class'\n\nexport default createReactClass({\n\n\trender() {\n\t\treturn (\n\t\t\t${1:<div></div>}\n\t\t)\n\t}\n\n})"
 
   "React: Stateless Component":
     prefix: "_rsc"
-    body: "import React from 'react'\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n}\n\nexport default ${1}"
+    body: "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
 
   "React: Stateless Component Return":
     prefix: "_rscr"
-    body: "import React from 'react'\n\nconst ${1} = ({${2}}) => {\n\treturn (\n\t\t<div>${4}</div>\n\t)\n}\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n}\n\nexport default ${1}"
+    body: "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1} = ({${2}}) => {\n\treturn (\n\t\t<div>${4}</div>\n\t)\n}\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
 
   "React: Stateless Component Click":
     prefix: "_rscc"
-    body: "import React from 'react'\n\nconst ${1} = ({${2}}) => {\n\tconst handleClick = () => {}\n\treturn (\n\t\t<div onClick={handleClick}>${4}</div>\n\t)\n}\n\n${1}.propTypes = {\n\t${2}: React.PropTypes.${3}\n}\n\nexport default ${1}"
+    body: "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1} = ({${2}}) => {\n\tconst handleClick = () => {}\n\treturn (\n\t\t<div onClick={handleClick}>${4}</div>\n\t)\n}\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
 
   "React: Stateless Component PropTypes":
     prefix: "_rscp"
-    body: "import React, {PropTypes} from 'react'\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
+    body: "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
 
   "React: Stateless Function":
     prefix: "_rsf"
