@@ -1,30 +1,35 @@
 {
-  "name": "react-snippets",
-  "version": "0.7.2",
-  "description": "Atom Snippets for React, React Router and Flux",
+  "name": "standard-react-snippets",
+  "version": "1.7.3",
+  "description": "A collection of React snippets for Atom, StandardJS Style",
   "main": "./lib/react-snippets",
   "scripts": {
     "test": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/webbushka/atom-react-snippets.git"
+    "url": "https://github.com/rongierlach/standard-react-snippets.git"
   },
   "keywords": [
     "react",
-    "react router",
-    "flux",
+    "atom",
     "snippets",
-    "es6"
+    "standard",
+    "standardjs",
+    "lint",
+    "style",
+    "es6",
+    "babel",
+    "esnext"
   ],
   "engines": {
     "atom": ">0.50.0"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/webbushka/atom-react-snippets/issues"
+    "url": "https://github.com/rongierlach/standard-react-snippets/issues"
   },
-  "homepage": "https://github.com/webbushka/atom-react-snippets",
+  "homepage": "https://github.com/rongierlach/standard-react-snippets",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-lintspaces": "^0.3.0"
