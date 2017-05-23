@@ -93,7 +93,7 @@
 
   "React: class skeleton":
     prefix: "_cer"
-    body: "import React from 'react';\n\nclass ${1} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
+    body: "import React, { Component } from 'react';\n\nclass ${1} extends Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
 
   "React: createClass skeleton":
     prefix: "_rcc"
