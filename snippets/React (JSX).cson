@@ -230,16 +230,16 @@
         ${2}
       }).isRequired,
     """
-    
+
   'React: PropType oneOf':
     'prefix': '_rpoo',
     'body': "PropTypes.oneOf(${1:PropTypes.}),"
-    
+
   'React: PropType oneOfType':
     'prefix': '_rpoot',
     'body': """
-       PropTypes.oneOfType([
-         ${1:PropTypes.},
-         ${2:PropTypes.}, 
-       ]),
+        PropTypes.oneOfType([
+          ${1:PropTypes.},
+          ${2:PropTypes.},
+        ]),
     """
