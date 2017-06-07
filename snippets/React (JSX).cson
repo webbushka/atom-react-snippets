@@ -235,7 +235,7 @@
     'prefix': '_rpoo',
     'body': "PropTypes.oneOf(${1:PropTypes.}),"
     
-  'React: PropType oneOf':
+  'React: PropType oneOfType':
     'prefix': '_rpoot',
     'body': """
        PropTypes.oneOfType([
