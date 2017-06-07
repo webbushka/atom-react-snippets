@@ -158,7 +158,7 @@
   "React: dangerouslySetInnerHTML":
     prefix: "_dnghtml"
     body: "dangerouslySetInnerHTML={{__html: ${1}}}"
-    
+
   # PropType string
   'React: PropType string':
     'prefix': '_rpstr',
@@ -229,4 +229,17 @@
       ${1:myProp}: PropTypes.shape({
         ${2}
       }).isRequired,
+    """
+    
+  'React: PropType oneOf':
+    'prefix': '_rpoo',
+    'body': "PropTypes.oneOf(${1:PropTypes.}),"
+    
+  'React: PropType oneOf':
+    'prefix': '_rpoot',
+    'body': """
+       PropTypes.oneOfType([
+         ${1:PropTypes.},
+         ${2:PropTypes.}, 
+       ]),
     """
