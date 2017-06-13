@@ -158,3 +158,91 @@
   "React: dangerouslySetInnerHTML":
     prefix: "_dnghtml"
     body: "dangerouslySetInnerHTML={{__html: ${1}}}"
+
+  # PropType string
+  'React: PropType string':
+    'prefix': '_rpstr',
+    'body': "${1:myProp}: PropTypes.string,"
+  'React: PropType string required':
+    'prefix': '_rpstrr',
+    'body': "${1:myProp}: PropTypes.string.isRequired,"
+
+  # PropType number
+  'React: PropType number':
+    'prefix': '_rpn',
+    'body': "${1:myProp}: PropTypes.number,"
+  'React: PropType number required':
+    'prefix': 'rpnr',
+    'body': "${1:myProp}: PropTypes.number.isRequired,"
+
+  # PropType object
+  'React: PropType object':
+    'prefix': '_rpo',
+    'body': "${1:myProp}: PropTypes.object,"
+  'React: PropType object required':
+    'prefix': '_rpor',
+    'body': "${1:myProp}: PropTypes.object.isRequired,"
+
+  # PropType array
+  'React: PropType array':
+    'prefix': '_rpa',
+    'body': "${1:myProp}: PropTypes.array,"
+  'React: PropType array required':
+    'prefix': '_rpar',
+    'body': "${1:myProp}: PropTypes.array.isRequired,"
+
+  # PropType bool
+  'React: PropType bool':
+    'prefix': '_rpb',
+    'body': "${1:myProp}: PropTypes.bool,"
+  'React: PropType bool required':
+    'prefix': '_rpbr',
+    'body': "${1:myProp}: PropTypes.bool.isRequired,"
+
+  # PropType element
+  'React: PropType element':
+    'prefix': '_rpe',
+    'body': "${1:myProp}: PropTypes.element,"
+  'React: PropType element required':
+    'prefix': '_rper',
+    'body': "${1:myProp}: PropTypes.element.isRequired,"
+
+  # PropType function
+  'React: PropType function':
+    'prefix': '_rpf',
+    'body': "${1:myProp}: PropTypes.func,"
+  'React: PropType function required':
+    'prefix': '_rpfr',
+    'body': "${1:myProp}: PropTypes.func.isRequired,"
+
+  # PropType shape
+  'React: PropType shape':
+    'prefix': '_rps',
+    'body': """
+      ${1:myProp}: PropTypes.shape({
+        ${2}
+      }),
+    """
+  'React: PropType shape required':
+    'prefix': '_rpsr',
+    'body': """
+      ${1:myProp}: PropTypes.shape({
+        ${2}
+      }).isRequired,
+    """
+
+  'React: PropType oneOf':
+    'prefix': '_rpoo',
+    'body': """
+        PropTypes.oneOf([
+          ${1},
+        ]),
+    """
+
+  'React: PropType oneOfType':
+    'prefix': '_rpoot',
+    'body': """
+        PropTypes.oneOfType([
+          ${1:PropTypes.},
+        ]),
+    """
