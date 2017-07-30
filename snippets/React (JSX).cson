@@ -18,7 +18,7 @@
   "React: export empty()":
     prefix: "_ex"
     body: "export ${1};"
-  
+
   "React: export default empty()":
     prefix: "_exd"
     body: "export default ${1};"
