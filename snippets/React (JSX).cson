@@ -15,6 +15,14 @@
     prefix: "_ird"
     body: "import ReactDOM from 'react-dom';"
 
+  "React: export empty()":
+    prefix: "_ex"
+    body: "export ${1};"
+
+  "React: export default empty()":
+    prefix: "_exd"
+    body: "export default ${1};"
+
   "React: componentDidMount() { ... }":
     prefix: "_cdm"
     body: "componentDidMount() {\n\t${1}\n}${2}"
