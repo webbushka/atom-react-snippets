@@ -7,6 +7,10 @@
     prefix: "_ir"
     body: "import React from 'react';"
 
+  "React: import() with Component":
+    prefix: "_irc"
+    body: "import React, { Component } from 'react';"
+
   "React: import() with PropTypes":
     prefix: "_irp"
     body: "import React from 'react';\nimport PropTypes from 'prop-types';"
