@@ -33,7 +33,7 @@
 
   "React: componentDidCatch(error, info) { ... }":
     prefix: "_cdc"
-    body: "componentDidUpdate(error, info) {\n\t${1}\n}${2}"
+    body: "componentDidCatch(error, info) {\n\t${1}\n}${2}"
 
   "React: componentDidUpdate(pp, ps) { ... }":
     prefix: "_cdup"
