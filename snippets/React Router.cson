@@ -1,4 +1,4 @@
-'.source.js':
+".source.js, source.ts, source.tsx":
   'Router: router skeleton':
     'prefix': '_rr'
     'body': """
