@@ -113,7 +113,7 @@
 
   "React: Stateless Component":
     prefix: "_rsc"
-    body: "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n};\n\nexport default ${1};"
+    body: "import React from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\nexport default ${1};"
 
   "React: Stateless Component Return":
     prefix: "_rscr"
