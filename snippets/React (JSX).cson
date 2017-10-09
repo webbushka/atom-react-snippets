@@ -31,6 +31,10 @@
     prefix: "_cdm"
     body: "componentDidMount() {\n\t${1}\n}${2}"
 
+  "React: componentDidCatch(error, info) { ... }":
+    prefix: "_cdc"
+    body: "componentDidCatch(error, info) {\n\t${1}\n}${2}"
+
   "React: componentDidUpdate(pp, ps) { ... }":
     prefix: "_cdup"
     body: "componentDidUpdate(prevProps, prevState) {\n\t${1}\n}${2}"
