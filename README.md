@@ -1,4 +1,6 @@
-Atom React.js Snippets [![Build Status](https://travis-ci.org/webbushka/atom-react-snippets.svg?branch=master)](https://travis-ci.org/webbushka/atom-react-snippets)
+Atom React.js Snippets [![Build Status](https://travis-ci.org/webbushka/atom-react-snippets.svg?branch=master)](https://travis-ci.org/webbushka/atom-react-snippets) <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/mVqUUAKReDd4Jwah6jycqaiK/webbushka/atom-react-snippets'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/mVqUUAKReDd4Jwah6jycqaiK/webbushka/atom-react-snippets.svg' />
+</a>
 ====================================================================================================================================================================
 
 An [Atom](https://atom.io/) snippet library for React. This library uses ES6 syntax, if you would prefer ES5 or Coffeescript snippets please use the [Atom React Package](https://atom.io/packages/react).
