@@ -11,11 +11,15 @@
     prefix: "_irc"
     body: "import React, { Component } from 'react';"
 
+  "React: import with PureComponent":
+    prefix: "_irpc"
+    body: "import React, { PureComponent } from 'react';"
+
   "React: import with PropTypes":
     prefix: "_irp"
     body: "import React from 'react';\nimport PropTypes from 'prop-types';"
 
-  "React: import with Component":
+  "React: import with Component and PropTypes":
     prefix: "_ircp"
     body: "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';"
 
