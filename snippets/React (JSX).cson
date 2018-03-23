@@ -3,6 +3,10 @@
     prefix: "_i"
     body: "import ${1} from '${2}';"
 
+  "React: import empty named":
+    prefix: "_in"
+    body: "import { ${1} } from '${2}';"
+
   "React: import":
     prefix: "_ir"
     body: "import React from 'react';"
@@ -103,6 +107,10 @@
     prefix: "_cer"
     body: "import React, { Component } from 'react';\n\nclass ${1} extends Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
 
+  "React: pure class skeleton":
+    prefix: "_cepr"
+    body: "import React, { PureComponent } from 'react';\n\nclass ${1} extends PureComponent {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t);\n\t}\n\n}\n\nexport default ${1};"
+
   "React: Stateless Component":
     prefix: "_rsc"
     body: "import React from 'react';\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n);\n\nexport default ${1};"
@@ -139,9 +147,21 @@
     prefix: "_props"
     body: "this.props.${1}"
 
+  "React: destruct this.props.":
+    prefix: "_dprops"
+    body: "const { ${1} } = this.props;"
+
   "React: this.state.":
     prefix: "_state"
     body: "this.state.${1}"
+
+  "React: destruct this.state.":
+    prefix: "_dstate"
+    body: "const { ${1} } = this.state;"
+
+  "React: destruct object.":
+    prefix: "_dobj"
+    body: "const { ${1} } = ${2};"
 
   "React: render(component, container, [callback])":
     prefix: "_rrc"
