@@ -167,6 +167,10 @@
     prefix: "_rrc"
     body: "React.render(${1:<$2 />}, ${3:document.body}${4:, ${5:callback}});"
 
+  "React: Fragment":
+    prefix: "_frag"
+    body: "<React.Fragment>\n\t$1\n</React.Fragment>"
+
   "React: constructor(props)":
     prefix: "_cns"
     body: "constructor(props) {\n\tsuper(props);\n\t${1:this.state = ${2};}\n}"
