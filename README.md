@@ -64,6 +64,7 @@ The **⇥** means the `TAB` key
 | `_props→`   | `this.props.` |
 | `_state→`   | `this.state.` |
 | `_rrc→`     | `React.render()` |
+| `_frag→`    | `<React.Fragment></React.Fragment>` |
 | `_cns→`     | `constructor method` |
 | `_clss→`    | class extends |
 | `_dnghtml→` | `dangerouslySetInnerHTML` |
