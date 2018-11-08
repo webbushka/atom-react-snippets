@@ -23,6 +23,10 @@
     prefix: "_irp"
     body: "import React from 'react';\nimport PropTypes from 'prop-types';"
 
+  "React: import PropTypes":
+    prefix: "_ipt"
+    body: "import PropTypes from 'prop-types';"
+
   "React: import with Component and PropTypes":
     prefix: "_ircp"
     body: "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';"
