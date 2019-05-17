@@ -1,4 +1,4 @@
-".source.js, .source.jsx, .source.ts, .source.tsx":
+".source.js, .source.jsx, .source.ts, .source.tsx, .source.flow":
   "React: import empty":
     prefix: "_i"
     body: "import ${1} from '${2}';"
