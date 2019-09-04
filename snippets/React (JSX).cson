@@ -299,3 +299,15 @@
   "React: PropType shape required":
     prefix: "_ptshr",
     body: "PropTypes.shape({${1}}).isRequired,"
+
+  "React: Import with useState":
+    prefix: "_irs",
+    body: "import React, { useState } from 'react';"
+
+  "React: Import with useEffect":
+    prefix: "_ire",
+    body: "import React, { useEffect } from 'react';"
+
+  "React: Import with useState and useEffect":
+    prefix: "_irse",
+    body: "import React, { useState, useEffect } from 'react';"
