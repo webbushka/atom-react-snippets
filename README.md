@@ -65,7 +65,7 @@ The **⇥** means the `TAB` key
 | `_cdn→`     | component display name |
 | `_ren→`     | `render() method` |
 | `_sst→`     | `setState()` |
-| `_ust→`     | `useState(const [x, setX])` |
+| `_ust→`     | use state `const [x, setX] = useState()` |
 | `_props→`   | `this.props.` |
 | `_state→`   | `this.state.` |
 | `_rrc→`     | `React.render()` |
