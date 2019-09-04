@@ -35,6 +35,9 @@ The **⇥** means the `TAB` key
 | `_ipt→`     | import prop-types |
 | `_ircp→`    | import react, component and prop-types |
 | `_ird→`     | import react-dom |
+| `_irs→`     | import react and useState |
+| `_ire→`     | import react and useEffect |
+| `_irse→`    | import react, useState and useEffect |
 | `_ex→`      | export |
 | `_exd→`     | export default |
 | `_cdm→`     | `componentDidMount method` |
