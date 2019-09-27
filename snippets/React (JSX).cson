@@ -35,6 +35,18 @@
     prefix: "_ird"
     body: "import ReactDOM from 'react-dom';"
 
+  "React: Import with useState":
+    prefix: "_irs",
+    body: "import React, { useState } from 'react';"
+
+  "React: Import with useEffect":
+    prefix: "_ire",
+    body: "import React, { useEffect } from 'react';"
+
+  "React: Import with useState and useEffect":
+    prefix: "_irse",
+    body: "import React, { useState, useEffect } from 'react';"
+
   "React: export empty()":
     prefix: "_ex"
     body: "export ${1};"
@@ -146,6 +158,10 @@
   "React: setState({ ... })":
     prefix: "_sst"
     body: "this.setState({\n\t${1}: ${2}\n});"
+
+  "React: useState(const [... , ...])":
+    prefix: "_ust"
+    body: "const [${1}, set${1/(.+)/\\u$1/}] = useState(${2})"
 
   "React: this.props.":
     prefix: "_props"
