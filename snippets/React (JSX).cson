@@ -201,7 +201,8 @@
 
   "React: dangerouslySetInnerHTML":
     prefix: "dnghtml"
-    body: "dangerouslySetInnerHTML={{html: ${1}}}"
+    body: "dangerouslySetInnerHTML={{__html: ${1}}}"
+
 
   # PropTypes
   "React: PropType array":
