@@ -1,6 +1,6 @@
 ".source.js, .source.jsx, .source.ts, .source.tsx, .source.flow":
   "React: import empty":
-    prefix: "i"
+    prefix: "im"
     body: "import ${1} from '${2}';"
 
   "React: import empty named":
