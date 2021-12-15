@@ -26,9 +26,11 @@ Snippets
 
 The **⇥** means the `TAB` key
 
+###### NOTE: Latest update has removed the underscore prefix
+
 | Trigger      | Content |
 | -------:     | ------- |
-| `i→`       | import empty |
+| `im→`       | import empty |
 | `ir→`      | import react |
 | `irc→`     | import react and component |
 | `irp→`     | import react and prop-types |
