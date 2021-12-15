@@ -28,84 +28,84 @@ The **⇥** means the `TAB` key
 
 | Trigger      | Content |
 | -------:     | ------- |
-| `_i→`       | import empty |
-| `_ir→`      | import react |
-| `_irc→`     | import react and component |
-| `_irp→`     | import react and prop-types |
-| `_ipt→`     | import prop-types |
-| `_ircp→`    | import react, component and prop-types |
-| `_ird→`     | import react-dom |
-| `_irs→`     | import react and useState |
-| `_ire→`     | import react and useEffect |
-| `_irse→`    | import react, useState and useEffect |
-| `_ex→`      | export |
-| `_exd→`     | export default |
-| `_cdm→`     | `componentDidMount method` |
-| `_cwm→`     | `componentWillMount method` |
-| `_cwr→`     | `componentWillReceiveProps method` |
-| `_scu→`     | `shouldComponentUpdate method` |
-| `_cwup→`    | `componentWillUpdate method` |
-| `_cdup→`    | `componentDidUpdate method` |
-| `_cwun→`    | `componentWillUnmount method` |
-| `_cdc→`     | `componentDidCatch method` |
-| `_cx→`      | `cx` |
-| `_fup→`     | `forceUpdate` |
-| `_cct→`     | component contextTypes |
-| `_cpt→`     | component propTypes |
-| `_cdp→`     | component defaultProps |
-| `_scct→`    | static component contextTypes |
-| `_scpt→`    | static component propTypes |
-| `_scdp→`    | static component defaultProps |
-| `_cer→`     | class component skeleton |
-| `_rsc→`     | stateless component skeleton |
-| `_rscp→`    | stateless component skeleton with PropTypes |
-| `_rscr→`    | stateless component skeleton with explicit `return` |
-| `_rscc→`    | stateless component skeleton with `handleClick` |
-| `_rsf→`     | stateless function |
-| `_cdn→`     | component display name |
-| `_ren→`     | `render() method` |
-| `_sst→`     | `setState()` |
-| `_ust→`     | use state `const [x, setX] = useState()` |
-| `_props→`   | `this.props.` |
-| `_state→`   | `this.state.` |
-| `_rrc→`     | `React.render()` |
-| `_frag→`    | `<React.Fragment></React.Fragment>` |
-| `_cns→`     | `constructor method` |
-| `_clss→`    | class extends |
-| `_dnghtml→` | `dangerouslySetInnerHTML` |
+| `i→`       | import empty |
+| `ir→`      | import react |
+| `irc→`     | import react and component |
+| `irp→`     | import react and prop-types |
+| `ipt→`     | import prop-types |
+| `ircp→`    | import react, component and prop-types |
+| `ird→`     | import react-dom |
+| `irs→`     | import react and useState |
+| `ire→`     | import react and useEffect |
+| `irse→`    | import react, useState and useEffect |
+| `ex→`      | export |
+| `exd→`     | export default |
+| `cdm→`     | `componentDidMount method` |
+| `cwm→`     | `componentWillMount method` |
+| `cwr→`     | `componentWillReceiveProps method` |
+| `scu→`     | `shouldComponentUpdate method` |
+| `cwup→`    | `componentWillUpdate method` |
+| `cdup→`    | `componentDidUpdate method` |
+| `cwun→`    | `componentWillUnmount method` |
+| `cdc→`     | `componentDidCatch method` |
+| `cx→`      | `cx` |
+| `fup→`     | `forceUpdate` |
+| `cct→`     | component contextTypes |
+| `cpt→`     | component propTypes |
+| `cdp→`     | component defaultProps |
+| `scct→`    | static component contextTypes |
+| `scpt→`    | static component propTypes |
+| `scdp→`    | static component defaultProps |
+| `cer→`     | class component skeleton |
+| `rsc→`     | stateless component skeleton |
+| `rscp→`    | stateless component skeleton with PropTypes |
+| `rscr→`    | stateless component skeleton with explicit `return` |
+| `rscc→`    | stateless component skeleton with `handleClick` |
+| `rsf→`     | stateless function |
+| `cdn→`     | component display name |
+| `ren→`     | `render() method` |
+| `sst→`     | `setState()` |
+| `ust→`     | use state `const [x, setX] = useState()` |
+| `props→`   | `this.props.` |
+| `state→`   | `this.state.` |
+| `rrc→`     | `React.render()` |
+| `frag→`    | `<React.Fragment></React.Fragment>` |
+| `cns→`     | `constructor method` |
+| `clss→`    | class extends |
+| `dnghtml→` | `dangerouslySetInnerHTML` |
 
 In this version the PropTypes snippets prefix has changed to `_pt` instead of `rp`. All snippets have two versions to allow for required and not required types.
 
 | Trigger  | Content |
 | -------: | ------- |
-| `_pta→`   | `PropTypes.array,` |
-| `_ptar→`  | `PropTypes.array.isRequired,` |
-| `_ptb→`   | `PropTypes.bool,` |
-| `_ptbr→`  | `PropTypes.bool.isRequired,` |
-| `_ptf→`   | `PropTypes.func,` |
-| `_ptfr→`  | `PropTypes.func.isRequired,` |
-| `_ptn→`   | `PropTypes.number,` |
-| `_ptnr→`  | `PropTypes.number.isRequired,` |
-| `_pto→`   | `PropTypes.object.,` |
-| `_ptor→`  | `PropTypes.object.isRequired,` |
-| `_pts→`   | `PropTypes.string,` |
-| `_ptsr→`  | `PropTypes.string.isRequired,` |
-| `_ptnd→`  | `PropTypes.node,` |
-| `_ptndr→` | `PropTypes.node.isRequired,` |
-| `_ptel→`  | `PropTypes.element,` |
-| `_ptelr→` | `PropTypes.element.isRequired,` |
-| `_pti→`   | `PropTypes.instanceOf(ClassName),` |
-| `_ptir→`  | `PropTypes.instanceOf(ClassName).isRequired,` |
-| `_pte→`   | `PropTypes.oneOf(['News', 'Photos']),` |
-| `_pter→`  | `PropTypes.oneOf(['News', 'Photos']).isRequired,` |
-| `_ptet→`  | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),` |
-| `_ptetr→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,` |
-| `_ptao→`  | `PropTypes.arrayOf(PropTypes.number),` |
-| `_ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,` |
-| `_ptoo→`  | `PropTypes.objectOf(PropTypes.number),` |
-| `_ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,` |
-| `_ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
-| `_ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
+| `pta→`   | `PropTypes.array,` |
+| `ptar→`  | `PropTypes.array.isRequired,` |
+| `ptb→`   | `PropTypes.bool,` |
+| `ptbr→`  | `PropTypes.bool.isRequired,` |
+| `ptf→`   | `PropTypes.func,` |
+| `ptfr→`  | `PropTypes.func.isRequired,` |
+| `ptn→`   | `PropTypes.number,` |
+| `ptnr→`  | `PropTypes.number.isRequired,` |
+| `pto→`   | `PropTypes.object.,` |
+| `ptor→`  | `PropTypes.object.isRequired,` |
+| `pts→`   | `PropTypes.string,` |
+| `ptsr→`  | `PropTypes.string.isRequired,` |
+| `ptnd→`  | `PropTypes.node,` |
+| `ptndr→` | `PropTypes.node.isRequired,` |
+| `ptel→`  | `PropTypes.element,` |
+| `ptelr→` | `PropTypes.element.isRequired,` |
+| `pti→`   | `PropTypes.instanceOf(ClassName),` |
+| `ptir→`  | `PropTypes.instanceOf(ClassName).isRequired,` |
+| `pte→`   | `PropTypes.oneOf(['News', 'Photos']),` |
+| `pter→`  | `PropTypes.oneOf(['News', 'Photos']).isRequired,` |
+| `ptet→`  | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]),` |
+| `ptetr→` | `PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,` |
+| `ptao→`  | `PropTypes.arrayOf(PropTypes.number),` |
+| `ptaor→` | `PropTypes.arrayOf(PropTypes.number).isRequired,` |
+| `ptoo→`  | `PropTypes.objectOf(PropTypes.number),` |
+| `ptoor→` | `PropTypes.objectOf(PropTypes.number).isRequired,` |
+| `ptsh→`  | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),` |
+| `ptshr→` | `PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,` |
 
 Contributing
 ------------
